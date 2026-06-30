@@ -33,6 +33,24 @@ function AllNotifications() {
       type:"Result",
       message:"project-review",
       timestamp:"2026-04-22 17:50:42"
+    },
+    {
+      id:"e5c4ff20-31bf-4d40-8f02=72fda59e8918",
+      type:"Result",
+      message:"external",
+      timestamp:"2026-04-22 17:50:18"
+    },
+    {
+      id:"1cfce5ee-ad37-4894-8946",
+      type:"Event",
+      message:"tech-fest",
+      timestamp:"2026-04-22 17:50:06:"
+    },
+    {
+      id:"8a7412bd-6065-4d09-a3f11cc848b",
+      type:"Placement",
+      message:"Advanced Micro Devices Inc.hiring",
+      timestamp:"2026-04-22 17:49:42"
     }
   ]);
 
