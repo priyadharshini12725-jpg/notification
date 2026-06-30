@@ -1,0 +1,56 @@
+import { useState } from "react";
+import NotificationCard from "../components/NotificationCard";
+
+function AllNotifications() {
+
+  const [notifications] = useState([
+    {
+      id:"d146095a-od86-4a34-9e69",
+      type:"Result",
+      message:"mid-sem",
+      timestamp:"2026-04-22 17:51:30"
+    },
+    {
+      id:"b283218f-ea5a-4b7c-9ca9",
+      type:"Placement",
+      message:"CSX corporative hiring",
+      timestamp:"2026-04-22 17:51:18"
+    },
+    {
+      id:"81589ada-0ad3-4f77-9554",
+      type:"Event",
+      message:"farewell",
+      timestamp:"2026-04-22 17:51:06"
+    },
+    {
+      id:"0005513a-142b-4bbc-8678",
+      type:"Result",
+      message:"mid-sem",
+      timestamp:"2026-04-22 17:50:54" 
+    },
+    {
+      id:"ea836726-c25e-4f21-a72f-544a6a",
+      type:"Result",
+      message:"project-review",
+      timestamp:"2026-04-22 17:50:42"
+    }
+  ]);
+
+  return (
+    <div>
+      <h1>All Notifications</h1>
+
+      {
+        notifications.map(item => (
+          <NotificationCard
+            key={item.id}
+            title={item.title}
+            type={item.type}
+          />
+        ))
+      }
+    </div>
+  );
+}
+
+export default AllNotifications;
